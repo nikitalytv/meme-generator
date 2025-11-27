@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dropzone {
+    width: 420px;
+    height: 260px;
+    border: 3px dashed #555;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    text-align: center;
+    color: #aaa;
+}
+
+.dropzone:hover {
+    border-color: #868686;
+    color: white;
+    cursor: pointer;
+}
+
+.dropzone-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.drop-icon {
+    width: 80px;
+    height: auto;
+    opacity: 0.85;
+}
+
+.dropzone h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+
+.dropzone p {
+    margin: 0;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.btn-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-btn {
+    padding: 12px 20px;
+    background-color: #0077ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.file-btn:hover {
+    background-color: #0057cc;
+}
+
+.file-btn input[type="file"] {
+    display: none;
+}
+
+.generate-btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.generate-btn:hover {
+    background-color: #1f8b39;
+}
+
+.dragover {
+    border-color: white;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.text-inputs {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 800px;
+    margin: 6px 0;
+}
+
+.meme-input {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: #1a1a1a;
+    border: 1px solid #444;
+    font-size: 15px;
+    color: white;
+    outline: none;
+    transition: 0.2s;
+}
+
+.meme-input:focus {
+    border-color: #0077ff;
+    background: #222;
+}
+
+.meme-input::placeholder {
+    color: #aaa;
+}
+
+form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+

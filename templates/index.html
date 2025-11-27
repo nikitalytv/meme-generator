@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/png" href="/static/logo.png">
+    <title>Meme Generator</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div id="dropzone-wrapper">
+            <div class="dropzone" id="dropzone">
+                <div class="dropzone-content">
+                    <img src="/static/logo.png" class="drop-icon" alt="icon">
+                    <h2>Upload image</h2>
+                    <p>Drag and drop your file or click here</p>
+                </div>
+            </div>
+        </div>
+
+        <img id="preview" style="display:none; width:100%; max-width:800px; max-height: 600px">
+
+
+        <form action="/generate" method="POST" enctype="multipart/form-data">
+            <div class="text-inputs" id="textInputs" style="display:none;">
+                <input id="topText" name="top" class="meme-input" placeholder="Top text">
+                <input id="bottomText" name="bottom" class="meme-input" placeholder="Bottom text">
+            </div>
+
+            <div class="btn-row">
+                <label class="file-btn" id="changeBtn">
+                    Choose image
+                    <input type="file" id="fileInput" name="image" hidden accept="image/*">
+                </label>
+
+                <button type="submit" id="generateBtn" class="generate-btn" style="display:none;">
+                    Generate meme
+                </button>
+            </div>
+        </form>
+
+
+    </div>
+
+    <script src="/static/main.js" defer></script>
+</body>
+
+
+</html>
